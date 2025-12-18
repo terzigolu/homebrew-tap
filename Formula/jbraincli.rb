@@ -5,21 +5,21 @@
 class Jbraincli < Formula
   desc "AI-powered task and memory management CLI for JosephsBrain"
   homepage "https://josephsbrain.com"
-  version "1.3.1"
+  version "1.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.1/jbraincli_1.3.1_darwin_amd64.tar.gz"
-      sha256 "65e6f55c9586d415638ee3931c2ed38f2fc24e547a213ce4d37a3750b598bd14"
+      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.2/jbraincli_1.3.2_darwin_amd64.tar.gz"
+      sha256 "0f1a12a7904bb975d886bf8361aa99764c9f8a5b2e9bde2585962851edcd7d26"
 
       def install
         bin.install "jbraincli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.1/jbraincli_1.3.1_darwin_arm64.tar.gz"
-      sha256 "0f90232e1e3344d0353039ea7ae330f02658abe8e7c7c6c5eefa4356574d9637"
+      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.2/jbraincli_1.3.2_darwin_arm64.tar.gz"
+      sha256 "ccdbb1f1ade4100257d2f97a6e323e35bb676e3984a6a45957f1be015a9f1fe4"
 
       def install
         bin.install "jbraincli"
@@ -29,15 +29,15 @@ class Jbraincli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.1/jbraincli_1.3.1_linux_amd64.tar.gz"
-      sha256 "bbaf8d8ea557b332933f3d6e74f4e5c221efbdb9dc0b37e208b3554415e01707"
+      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.2/jbraincli_1.3.2_linux_amd64.tar.gz"
+      sha256 "5b378bec339cd49e3b210c68af822dd181701a3e5dbb025096f03d041cd55ca5"
       def install
         bin.install "jbraincli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.1/jbraincli_1.3.1_linux_arm64.tar.gz"
-      sha256 "59b9cc67247c1f4d23543d84811790c152faa303a61ee8d7d615a09eb639b695"
+      url "https://github.com/terzigolu/josepshbrain-go/releases/download/v1.3.2/jbraincli_1.3.2_linux_arm64.tar.gz"
+      sha256 "a4b666eef12983492f105269a13fb3e115973b8dc79d6dafa8a34c1d86661567"
       def install
         bin.install "jbraincli"
       end
