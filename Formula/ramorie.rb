@@ -5,21 +5,21 @@
 class Ramorie < Formula
   desc "AI-powered task and memory management CLI"
   homepage "https://ramorie.com"
-  version "1.4.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.0/ramorie_1.4.0_darwin_amd64.tar.gz"
-      sha256 "8b7671297e22a26cc04cd128dde998981996980b8bde143ace1e26d6432cb98c"
+      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.1/ramorie_1.4.1_darwin_amd64.tar.gz"
+      sha256 "b047c5642d8381c960df86d4dc62ca0423de646430254d4914ee126bb1a5f8f7"
 
       def install
         bin.install "ramorie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.0/ramorie_1.4.0_darwin_arm64.tar.gz"
-      sha256 "33855d25edc6c9e76c6c7229ef5a672a95b4641fa2e3dba70512a097d3ac2e62"
+      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.1/ramorie_1.4.1_darwin_arm64.tar.gz"
+      sha256 "afb7aa68758da86cffce8949282eb3d706f4d7f221af2fa1ba05c6093db16e3a"
 
       def install
         bin.install "ramorie"
@@ -29,15 +29,15 @@ class Ramorie < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.0/ramorie_1.4.0_linux_amd64.tar.gz"
-      sha256 "8e23bff890939d0a20f2dc4694279959d8598926c781fd5d41eea7f0efb2c9dd"
+      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.1/ramorie_1.4.1_linux_amd64.tar.gz"
+      sha256 "1f8c93baa2a6c95bee4f62bfcaea570a87baafb196bd3c9aee3b92c81f31da64"
       def install
         bin.install "ramorie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.0/ramorie_1.4.0_linux_arm64.tar.gz"
-      sha256 "9f09fa305d431137ae10526a91cd21a32d271f3ccef1e93bd8c331093c3a5df6"
+      url "https://github.com/terzigolu/ramorie/releases/download/v1.4.1/ramorie_1.4.1_linux_arm64.tar.gz"
+      sha256 "5be0dfa7cfd008f4cf873f5fb0d92314aeeca34189cd8c793af941a3c98eec04"
       def install
         bin.install "ramorie"
       end
